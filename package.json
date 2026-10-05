@@ -8,6 +8,15 @@
     "vercel",
     "preview"
   ],
+  "author": "tpompon",
+  "homepage": "https://github.com/tpompon/paseo-vercel-preview#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tpompon/paseo-vercel-preview.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tpompon/paseo-vercel-preview/issues"
+  },
   "license": "MIT",
   "type": "module",
   "files": [

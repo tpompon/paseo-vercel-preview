@@ -16,11 +16,23 @@ Adds a **Preview** button to the workspace header when the workspace branch has 
 ## Install
 
 ```bash
-paseo plugin install <git-url-or-npm-package>
+paseo plugin install npm:paseo-plugin-vercel-preview
+```
+
+Or from GitHub:
+
+```bash
+paseo plugin install github:tpompon/paseo-vercel-preview
 ```
 
 ## How it works
 
 The daemon resolves the pull request head commit with `gh api`, lists the GitHub deployments created by `vercel[bot]` for that commit, and reads the latest status of each to get the preview URL. It refreshes whenever Paseo updates the pull request checks.
 
-Browser profiles are opened on the daemon host, so pick them only when the daemon runs on the machine you are using.
+## Limitations
+
+- Paseo plugins cannot render split buttons, so the preview links and the **Open in** picker share one dropdown.
+- Browser profile targets are macOS-only and support Chrome, Brave and Edge.
+- Browser profiles open on the daemon host, so pick them only when the daemon runs on the machine you are using.
+- The Paseo browser target requires the desktop app.
+- Only Vercel deployments recorded through Vercel's GitHub integration are detected.
