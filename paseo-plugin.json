@@ -1,0 +1,7 @@
+{
+  "id": "vercel-preview",
+  "description": "Header button that opens the Vercel preview deployments of a workspace pull request.",
+  "requirements": {
+    "paseo": ">=0.10.3"
+  }
+}
